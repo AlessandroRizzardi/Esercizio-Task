@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/alessandro/Desktop/TPA/Tasks/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/alessandro/Desktop/TPA/Tasks/include  -g   -std=gnu++1z -o CMakeFiles/mainEntry.dir/main.cpp.o -c /home/alessandro/Desktop/TPA/Tasks/main.cpp",
+  "file": "/home/alessandro/Desktop/TPA/Tasks/main.cpp"
+}
+]

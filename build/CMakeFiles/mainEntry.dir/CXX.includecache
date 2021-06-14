@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alessandro/Desktop/TPA/Tasks/include/StackTasks.h
+unordered_map
+-
+vector
+-
+iostream
+-
+
+/home/alessandro/Desktop/TPA/Tasks/main.cpp
+include/StackTasks.h
+/home/alessandro/Desktop/TPA/Tasks/include/StackTasks.h
+unordered_map
+-
+vector
+-
+iostream
+-
+sstream
+-
+

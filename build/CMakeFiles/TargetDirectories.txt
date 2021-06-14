@@ -1,0 +1,3 @@
+/home/alessandro/Desktop/TPA/Tasks/build/CMakeFiles/rebuild_cache.dir
+/home/alessandro/Desktop/TPA/Tasks/build/CMakeFiles/mainEntry.dir
+/home/alessandro/Desktop/TPA/Tasks/build/CMakeFiles/edit_cache.dir
