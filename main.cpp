@@ -26,15 +26,17 @@ int main() {
 
     Tasks stack;
 
-    vector<char> tasks = stack.execute('a',subtaks);
+    vector<pair<char,int>> tasks = stack.execute('a',subtaks);
 
     
-   std::stringstream ss;
-   for (int i = 0; i < tasks.size(); i++){
-       ss << tasks[i] << " ";
+    std::stringstream ss;
+    ss << "[";
+    for (int i = 0; i < tasks.size(); i++){
+        ss << " (" << tasks[i].first << "," << tasks[i].second << ")" << std::endl;
     }
-
-    cout << "[" << ss.str() << "]" << std::endl;
+    ss << "]"; 
+    
+    cout << ss.str() << std::endl;
 
    
 
