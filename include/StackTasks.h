@@ -44,11 +44,6 @@ class Tasks{
                 int stage = elements.back().second;
                 elements.pop_back();
 
-               
-
-
-               
-
                 cout << "DEBUG: Doing task ";
                 for(int i = 0; i < level; i++){
                     cout << " ";
@@ -60,7 +55,7 @@ class Tasks{
                 } 
                 cout << "level=" << stage;
 
-                 for(int i = subtasks.at(back).size() - 1; i >= 0; i--){
+                for(int i = subtasks.at(back).size() - 1; i >= 0; i--){
                     
                     this->elements.push_back(pair<char,int>{subtasks.at(back)[i],level + 1});
                 }
