@@ -23,7 +23,7 @@ class Tasks{
 
             vector<pair<char,int>> ret = {};
 
-            int level = 0;
+            
 
             if(subtasks.count(task) == 0){
                 cout << "DEBUG: Doing task " << task << ", scheduling subtasks []" << std::endl;
@@ -40,8 +40,8 @@ class Tasks{
             while(this->elements.size() > 0){
 
                 back = this->elements.back().first; 
+                int level = elements.back().second;
                 ret.push_back(pair<char,int>{back,level}); 
-                int stage = elements.back().second;
                 elements.pop_back();
 
                 cout << "DEBUG: Doing task ";
@@ -53,14 +53,15 @@ class Tasks{
                 for(int i  = 0; i < subtasks.size() - level; i++){
                     cout << " ";
                 } 
-                cout << "level=" << stage;
+                cout << "level=" << level;
 
-                for(int i = subtasks.at(back).size() - 1; i >= 0; i--){
-                    
-                    this->elements.push_back(pair<char,int>{subtasks.at(back)[i],level + 1});
+                if(subtasks.count(back) == 1){
+                    for(int i = subtasks.at(back).size() - 1; i >= 0; i--){
+                        
+                        this->elements.push_back(pair<char,int>{subtasks.at(back)[i],level + 1});
+                    }    
                 }
                 
-
                 cout << " Stack: elements= [";
 
               
@@ -74,12 +75,6 @@ class Tasks{
                 cout << "]" << std::endl;
             
 
-                
-                if(subtasks.at(back).size() == 0){
-                    level--;
-                }else{
-                    level++;
-                }
 
                 
 
